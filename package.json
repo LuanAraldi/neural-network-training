@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "neataptic": "^1.1.13",
     "synaptic": "^1.0.10"
   }
 }

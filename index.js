@@ -24,7 +24,7 @@ Perceptron.prototype = new Network();
 Perceptron.prototype.constructor = Perceptron;
 
 var qtyInput = 17;
-var qtySample = 50;
+var qtySample = 28;
 var qtyOutput = 4;
 var qtyHidden = 5;
 
@@ -159,6 +159,8 @@ myTrainer.train(trainingSet, {
     log: 1,
     cost: Trainer.cost.CROSS_ENTROPY
 });
+
+console.log(trainingSet.length);
 
 console.log(myPerceptron.activate([1, 1, 0, 0.3, 1, 0.25, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0.5, 0])); //29 Deu Bom
 

@@ -154,7 +154,7 @@ var trainingSet = [
 
 myTrainer.train(trainingSet, {
     rate: .2,
-    iterations: 60,
+    iterations: 80,
     error: .1,
     log: 1,
     cost: Trainer.cost.CROSS_ENTROPY

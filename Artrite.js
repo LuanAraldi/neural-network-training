@@ -160,8 +160,6 @@ myTrainer.train(trainingSet, {
     cost: Trainer.cost.CROSS_ENTROPY
 });
 
-console.log(trainingSet.length);
-
 console.log(myPerceptron.activate([1, 1, 0, 0.3, 1, 0.25, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0.5, 0])); //29 Deu Bom
 
 console.log(myPerceptron.activate([0, 0, 0, 0.3, 0, 0, 0.5, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0])); //30 Deu Bom

@@ -25,128 +25,142 @@ Perceptron.prototype.constructor = Perceptron;
 
 var qtyInput = 17;
 var qtySample = 50;
-var qtyOutput = 1;
+var qtyOutput = 4;
 var qtyHidden = 5;
 
 var myPerceptron = new Perceptron(qtyInput, qtyHidden, qtyOutput);
 var myTrainer = new Trainer(myPerceptron);
 
+
+//Pos 1 = Gota
+//Pos 2 = Reumatica
+//Pos 3 = Ankylosante
+//Pos 4 = Não Tem
+
 var trainingSet = [
     {
         input: [1, 1, 1, .3, 1, 0, .5, .6, 0, 0, 0, 0, 0, 0, 0, .5, 0],
-        output: [1]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0, 0.5, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0],
-        output: [2]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
-        output: [2]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0.5, 0, 0.6, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-        output: [2]
+        output: [0, 1, 0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 1, 1, 0.9, 1, 0, 0, 1, 1, 1, 0, 0, 0],
-        output: [0]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0.5, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0],
-        output: [1]
+        output: [0, 1, 0, 0]
     },
     {
         input: [1, 0, 1, 0.7, 1, 0.5, 0, 0.9, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-        output: [3]
+        output: [ 0, 0, 1, 0]
     },
     {
         input: [1, 1, 1, 0.3, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-        output: [1]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0],
-        output: [3]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0, 0.3, 1, 1, 0, 0, 1, 1, 0, 0.5, 0],
-        output: [2]
+        output: [0, 1, 0, 0]
     },
     {
         input: [1, 0, 0, 0.7, 0, 0.25, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0],
-        output: [3]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0.25, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0],
-        output: [3]
+        output: [0, 1,0, 0]
     },
     {
         input: [1, 0, 0, 0.7, 0, 0.5, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0],
-        output: [2]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0, 0.6, 1, 1, 0, 0, 1, 1, 0, 0, 1],
-        output: [2]
+        output: [0, 1,0, 0]
     },
     {
         input: [1, 1, 0, 0.7, 1, 0, 0.5, 0.3, 0, 1, 0, 0, 0, 0, 0, 1, 0],
-        output: [2]
+        output: [0, 0, 1, 0]
     },
     {
         input: [1, 0, 1, 0.7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-        output: [2]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0],
-        output: [1]
+        output: [0, 1, 0, 0]
     },
     {
         input: [1, 1, 0, 0.7, 0, 0.25, 0, 0.9, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-        output: [2]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0.5, 0.5, 0.6, 1, 0, 0, 0, 0, 1, 0, 0, 0],
-        output: [3]
-    },//21
+        output: [1, 0, 0, 0]
+    },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0, 0.6, 1, 0, 1, 1, 1, 1, 0, 0, 0],
-        output: [1]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0],
-        output: [1]
+        output: [1, 0,  0, 0]
     },
     {
         input: [1, 1, 0, 0.7, 1, 0, 0, 0.9, 0, 1, 0, 0, 0, 1, 0, 1, 0],
-        output: [2]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0, 0.5, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0],
-        output: [1]
+        output: [1, 0,  0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0.5, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
-        output: [2]
+        output: [1, 0, 0, 0]
     },
     {
         input: [0, 0, 0, 0.7, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0.5, 0],
-        output: [3]
+        output: [0, 1, 0, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0.5, 0.6, 1, 0, 0, 0, 1, 1, 0, 0, 0],
-        output: [3]
+        output: [0, 1, 0, 0]
     },
     {
         input: [1, 0, 0, 0.7, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
-        output: [1]
+        output: [0, 0, 1, 0]
     },
     {
         input: [0, 0, 0, 0.3, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0.5, 0],
-        output: [2]
+        output: [0, 1, 0, 0] //28
     }
 ]
 
-myTrainer.train(trainingSet);
+myTrainer.train(trainingSet, {
+    rate: .2,
+    iterations: 60,
+    error: .1,
+    log: 1,
+    cost: Trainer.cost.CROSS_ENTROPY
+});
 
-console.log(myPerceptron.activate([0,0,0,0.7,0,0.5,0.75,0,0,1,0,0,0,1,0,0,0]));
+console.log(myPerceptron.activate([1, 1, 0, 0.3, 1, 0.25, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0.5, 0])); //29 Deu Bom
+
+console.log(myPerceptron.activate([0, 0, 0, 0.3, 0, 0, 0.5, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0])); //30 Deu Bom
 

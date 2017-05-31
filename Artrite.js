@@ -23,7 +23,7 @@ function Perceptron(input, hidden, output) {
 Perceptron.prototype = new Network();
 Perceptron.prototype.constructor = Perceptron;
 
-var qtyInput = 17;
+var qtyInput = 35;
 var qtySample = 28;
 var qtyOutput = 4;
 var qtyHidden = 5;

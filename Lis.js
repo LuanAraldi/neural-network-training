@@ -1,4 +1,5 @@
 var synaptic = require('synaptic');
+
 var Neuron = synaptic.Neuron,
     Layer = synaptic.Layer,
     Network = synaptic.Network,
@@ -30,7 +31,6 @@ var qtyHidden = 10;
 
 var myPerceptron = new Perceptron(qtyInput, qtyHidden, qtyOutput);
 var myTrainer = new Trainer(myPerceptron);
-
 
 //Pos 1 = Setosa
 //Pos 2 = Versicolor
@@ -137,7 +137,6 @@ var trainingSet = [
     { input: [6.0, 2.2, 4.0, 1.0], output: [0, 1, 0] },
     { input: [6.8, 3.0, 5.5, 2.1], output: [0, 0, 1] },
     { input: [4.3, 3.0, 1.1, 0.1], output: [1, 0, 0] },
-
 ]
 
 myTrainer.train(trainingSet, {
@@ -147,7 +146,6 @@ myTrainer.train(trainingSet, {
     log: 1,
     cost: Trainer.cost.CROSS_ENTROPY
 });
-
 
 console.log(myPerceptron.activate([6.1, 2.9, 4.7, 1.4])); // 101 Deu Bom    Versicolor
 

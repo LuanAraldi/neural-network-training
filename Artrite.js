@@ -187,13 +187,27 @@ var trainingSet = [
 
 myTrainer.train(trainingSet, {
     rate: .2,
-    iterations: 80,
+    iterations: 100,
     error: .1,
     log: 1,
     cost: Trainer.cost.CROSS_ENTROPY
 });
 
-console.log(myPerceptron.activate([1, 1, 0, 0.3, 1, 0.25, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0.5, 0])); //29 Deu Bom
 
-console.log(myPerceptron.activate([0, 0, 0, 0.3, 0, 0, 0.5, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0])); //30 Deu Bom
+console.log('\n 36 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([0,0,0,0.3,0,0.25,0.5,0,1,0,0,0,1,1,0,0,0]));
+console.log('\n 37 Resultado esperado: Não tem = 0 | Resultado: ' + myPerceptron.activate([0,0,0,0.7,0,0,0,0,0,0,0,0,0,0,0,0,0]));
+console.log('\n 38 Resultado esperado: Gota = 1 | Resultado: ' + myPerceptron.activate([0,0,0,0.3,0,0.5,0.5,0,1,0,0,1,0,1,0,0,0]));
+console.log('\n 39 Resultado esperado: Anquilosante = 3 |  Resultado: ' + myPerceptron.activate([1,1,1,0.3,0,0.5,1,0.6,1,0,0,0,0,1,0,1,1]));
+console.log('\n 40 Resultado esperado: Gota = 1 | Resultado: ' + myPerceptron.activate([0,0,0,0.7,0,0.25,0.75,0,1,0,0,1,1,1,0,0,0]));
+console.log('\n 41 Resultado esperado: Anquilosante = 1 | Resultado: ' + myPerceptron.activate([1,0,0,0.7,0,0,0.5,0.6,0,0,0,0,0,1,0,1,0]));
+console.log('\n 42 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([1,1,0,0.7,0,0,0.25,0,0,1,0,0,0,1,0,0,0]));
+console.log('\n 43 Resultado esperado: Anquilosante = 3 |  Resultado: ' + myPerceptron.activate([1,1,1,0.7,0,0,0.75,0,0,0,0,0,0,0,0,1,0]));
+console.log('\n 44 Resultado esperado: Anquilosante = 3 |  Resultado: ' + myPerceptron.activate([1,0,0,0.7,1,0.5,0.75,0,0,1,0,0,0,0,0,1,0]));
+console.log('\n 45 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([0,0,0,0.3,0,0.25,0.75,0,1,1,0,0,1,1,0,0,0]));
+console.log('\n 46 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([0,0,0,0.3,0,0.25,0.5,0,1,1,0,0,1,1,0,0,0]));
+console.log('\n 47 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([0,0,0,0.3,0,0.5,0.75,0,1,0,0,0,1,1,0,0,0]));
+console.log('\n 48 Resultado esperado: Reumatica = 2|  Resultado: ' + myPerceptron.activate([0,0,0,0.7,0,0.75,0.75,0,0,1,0,0,0,1,0,0,0]));
+console.log('\n 49 Resultado esperado: Gota = 1 |  Resultado: ' + myPerceptron.activate([1,0,0,0.7,0,0.25,0.75,0,1,0,0,0,1,1,0,0,0]));
+console.log('\n 50 Resultado esperado: Reumatica = 2 |  Resultado: ' + myPerceptron.activate([0,0,0,0.7,0,0.5,0.75,0,0,1,0,0,0,1,0,0,0]));
+
 

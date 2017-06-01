@@ -147,8 +147,54 @@ myTrainer.train(trainingSet, {
     cost: Trainer.cost.CROSS_ENTROPY
 });
 
-console.log(myPerceptron.activate([6.1, 2.9, 4.7, 1.4])); // 101 Deu Bom    Versicolor
+console.log('\n 101  2 |  Resultado: ' + myPerceptron.activate([6.1,2.9,4.7,1.4]));
+console.log('\n 102  3 |  Resultado: ' + myPerceptron.activate([5.7,2.5,5.0,2.0]));
+console.log('\n 103  1 |  Resultado: ' + myPerceptron.activate([5.8,4.0,1.2,0.2]));
+console.log('\n 104  2 |  Resultado: ' + myPerceptron.activate([5.6,2.9,3.6,1.3]));
+console.log('\n 105  3 |  Resultado: ' + myPerceptron.activate([5.8,2.8,5.1,2.4]));
+console.log('\n 106  1 |  Resultado: ' + myPerceptron.activate([5.7,4.4,1.5,0.4]));
+console.log('\n 107  2 |  Resultado: ' + myPerceptron.activate([6.7,3.1,4.4,1.4]));
+console.log('\n 108  3 |  Resultado: ' + myPerceptron.activate([6.4,3.2,5.3,2.3]));
+console.log('\n 109  1 |  Resultado: ' + myPerceptron.activate([5.4,3.9,1.3,0.4]));
+console.log('\n 110  2 |  Resultado: ' + myPerceptron.activate([5.6,3.0,4.5,1.5]));
+console.log('\n 111  3 |  Resultado: ' + myPerceptron.activate([6.5,3.0,5.5,1.8]));
+console.log('\n 112  1 |  Resultado: ' + myPerceptron.activate([5.1,3.5,1.4,0.3]));
+console.log('\n 113  2 |  Resultado: ' + myPerceptron.activate([5.8,2.7,4.1,1.0]));
+console.log('\n 114  3 |  Resultado: ' + myPerceptron.activate([7.7,3.8,6.7,2.2]));
+console.log('\n 115  1 |  Resultado: ' + myPerceptron.activate([5.7,3.8,1.7,0.3]));
+console.log('\n 116  2 |  Resultado: ' + myPerceptron.activate([5.2,2.2,4.5,1.5]));
+console.log('\n 117  3 |  Resultado: ' + myPerceptron.activate([7.7,2.6,6.9,2.3]));
+console.log('\n 118  1 |  Resultado: ' + myPerceptron.activate([5.1,3.8,1.5,0.3]));
+console.log('\n 119  2 |  Resultado: ' + myPerceptron.activate([5.6,2.5,3.9,1.1]));
+console.log('\n 120  3 |  Resultado: ' + myPerceptron.activate([6.0,2.2,5.0,1.5]));
+console.log('\n 121  1 |  Resultado: ' + myPerceptron.activate([5.4,3.4,1.7,0.2]));
+console.log('\n 122  2 |  Resultado: ' + myPerceptron.activate([5.9,3.2,4.8,1.8]));
+console.log('\n 123  3 |  Resultado: ' + myPerceptron.activate([6.9,3.2,5.7,2.3]));
+console.log('\n 124  1 |  Resultado: ' + myPerceptron.activate([5.1,3.7,1.5,0.4]));
+console.log('\n 125  2 |  Resultado: ' + myPerceptron.activate([6.1,2.8,4.0,1.3]));
+console.log('\n 126  3 |  Resultado: ' + myPerceptron.activate([5.6,2.8,4.9,2.0]));
+console.log('\n 127  1 |  Resultado: ' + myPerceptron.activate([4.6,3.6,1.0,0.2]));
+console.log('\n 128  2 |  Resultado: ' + myPerceptron.activate([6.3,2.5,4.9,1.5]));
+console.log('\n 129  3 |  Resultado: ' + myPerceptron.activate([7.7,2.8,6.7,2.0]));
+console.log('\n 130  1 |  Resultado: ' + myPerceptron.activate([5.1,3.3,1.7,0.5]));
+console.log('\n 131  2 |  Resultado: ' + myPerceptron.activate([6.1,2.8,4.7,1.2]));
+console.log('\n 132  3 |  Resultado: ' + myPerceptron.activate([6.3,2.7,4.9,1.8]));
+console.log('\n 133  1 |  Resultado: ' + myPerceptron.activate([4.8,3.4,1.9,0.2]));
+console.log('\n 134  2 |  Resultado: ' + myPerceptron.activate([6.4,2.9,4.3,1.3]));
+console.log('\n 135  3 |  Resultado: ' + myPerceptron.activate([6.7,3.3,5.7,2.1]));
+console.log('\n 136  1 |  Resultado: ' + myPerceptron.activate([5.0,3.0,1.6,0.2]));
+console.log('\n 137  2 |  Resultado: ' + myPerceptron.activate([6.6,3.0,4.4,1.4]));
+console.log('\n 138  3 |  Resultado: ' + myPerceptron.activate([7.2,3.2,6.0,1.8]));
+console.log('\n 139  1 |  Resultado: ' + myPerceptron.activate([5.0,3.4,1.6,0.4]));
+console.log('\n 140  2 |  Resultado: ' + myPerceptron.activate([5.8,2.8,4.8,1.4]));
+console.log('\n 141  3 |  Resultado: ' + myPerceptron.activate([6.2,2.8,4.8,1.8]));
+console.log('\n 142  1 |  Resultado: ' + myPerceptron.activate([5.2,3.5,1.5,0.2]));
+console.log('\n 143  2 |  Resultado: ' + myPerceptron.activate([6.7,3.0,5.0,1.7]));
+console.log('\n 144  3 |  Resultado: ' + myPerceptron.activate([6.1,3.0,4.9,1.8]));
+console.log('\n 145  1 |  Resultado: ' + myPerceptron.activate([5.2,3.4,1.4,0.2]));
+console.log('\n 146  2 |  Resultado: ' + myPerceptron.activate([6.0,2.9,4.5,1.5]));
+console.log('\n 147  3 |  Resultado: ' + myPerceptron.activate([6.4,2.8,5.6,2.1]));
+console.log('\n 148  1 |  Resultado: ' + myPerceptron.activate([4.7,3.2,1.6,0.2]));
+console.log('\n 149  2 |  Resultado: ' + myPerceptron.activate([5.7,2.6,3.5,1.0]));
+console.log('\n 150  3 |  Resultado: ' + myPerceptron.activate([7.2,3.0,5.8,1.6]));
 
-console.log(myPerceptron.activate([5.7, 2.5, 5.0, 2.0])); // 102 Deu Bom    Virginia
-
-console.log(myPerceptron.activate([5.8, 4.0, 1.2, 0.2])); // 103 Deu Bom    Setosa
